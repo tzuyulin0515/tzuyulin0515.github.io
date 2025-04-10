@@ -1,0 +1,285 @@
+body {
+    font-family: serif; 
+    background-color: #F8F9FA; 
+    color: #3A3A3A; 
+    margin: 0px;
+    padding: 0;
+    line-height: 1.8; /*行高*/
+}
+/*整份文件的h1+h2+h3*/
+h1, h2, h3 {
+        font-weight: bold; /*字型：粗體*/
+}
+h1 {
+    font-size: 2.5rem;
+    color: #eaeaea;
+    background-color: #1F3B73;
+    padding: 10px;
+    text-align: center; /*文字對齊方式*/
+    border-radius: 8px;
+    width: 95% ;
+    margin: 20px auto; /*元素外部的間距上下：20px 左右自動*/
+}
+h2 {
+    font-size: 2rem;
+    color: #FFFFFF;
+    background-color: #2C3E50;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width:90%;
+    margin: 20px auto ;
+}
+h3 {
+    font-size: 1.5rem;
+    color: #1F3B73;
+    text-align: center;
+}
+h4{
+    font-size:1.3rem ;
+}
+main p {  /*我是一個對數字敏感、注重細節的人那段*/
+    font-size: 1.1rem;
+    color: #3A3A3A;
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #F8F9FA;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /*box-shadow添加陰影 1px水平方向偏移量 1px垂直方向偏移量 5px模糊程度 rgba陰影顏色*/
+}
+header {
+    background-color: #1F3B73;
+    padding: 15px;
+    text-align: center;
+}
+.menu {
+    list-style: none; /*選單的清單無清單標記*/
+    padding: 0;
+    display: flex; /*水平排列*/
+    justify-content: center;/*置中對齊*/
+    gap: 30px;/*每個按鈕中間間隔30px*/
+}
+.menu a {
+    text-decoration: none;  /*超連結沒有底線*/
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s; /*點上去動畫會漸強漸弱0.3秒*/
+    color: white !important;
+    background-color: #2C3E50 !important;
+}
+.menu a:hover {
+    background-color: #007BFF !important; 
+}
+
+#understandme {
+    text-align: center;
+    background-image: linear-gradient(to bottom,#2A4D8C, #2C3E50, #F8F9FA);/*由上往下做漸層*/
+    color: #FFFFFF;
+    padding: 50px 20px;
+}
+#understandme h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #F8F9FA; 
+}
+h2 a {
+    color: inherit;/*會繼承父元素的顏色 不會變成預設顏色*/
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+#edu h4 {
+    text-align: center;
+}
+#edu ul {
+    background: white;
+    padding: 15px 15px 15px 40px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 10px auto;
+    text-align: center;
+}
+#work ul {
+    background: white;
+    padding: 15px 15px 15px 40px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: 10px auto;
+    text-align: center;
+}
+#work h3 {
+    color: #007BFF;
+    text-align: center;
+}
+#work h4 {
+    text-align: center;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
+.progress-bar { /*進度條*/
+    width:90%;
+    height: 10px;
+    background: #EAEAEA;
+    border-radius: 5px;
+    margin: 10px auto;
+    overflow: hidden; /*隱藏超出的部分*/
+}
+.progress {
+    height: 100%;
+    background: #1F3B73;
+    border-radius: 5px;
+}
+
+/* 檔案卡片區 */
+.file-gallery {
+    display: flex; /*橫向排列*/
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+/* 每張檔案卡片 */
+.file-card {
+    width: 250px;
+    background: #F8F9FA;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.file-card:hover {
+    transform: scale(1.05); /* 滑鼠懸停時放大 */
+}
+/* 圖片 (檔案類型 ICON) */
+.file-card img {
+    width: 80px;
+    height: 30;
+    margin: 0;
+    display: flex;
+    max-width: 100%; /*不會超過卡片範圍*/
+    max-height: 150px; /*設定最大高度，防止圖片過高*/
+    object-fit: contain; /*確保圖片不變形*/
+    margin: auto; 
+}
+/* 檔案標題 */
+.file-card h2 {
+    font-size: 1.2rem;
+    color: #1F3B73;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    min-height: 80px;
+    display: flex;
+    align-items: center;  /*讓文字「垂直置中」*/
+    justify-content: center;
+}
+/* 檔案描述 */
+.file-card p {
+    font-size: 0.9rem;
+    color: #3A3A3A;
+    margin-bottom: 10px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;  /* 讓文字「垂直置中」 */
+    justify-content: center;
+}
+
+/* 下載按鈕 */
+.file-download {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #1F3B73;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.file-download:hover {
+    background: #007BFF;
+}
+/* 整個畫廊區域 */
+.scroll-gallery {
+    display: flex;
+    overflow-x: auto; /* 允許左右滾動 */
+    gap: 15px;
+    padding: 10px;
+    scroll-snap-type: x mandatory; /* 滑動時自動對齊 */
+    white-space: nowrap; /* 確保內容不換行 */
+}
+
+/* 每張作品卡片 */
+.photo-card {
+    min-width: 280px; /* 固定卡片寬度 */
+    background: #F8F9FA;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start; /* 滑動時對齊 */
+    display: inline-block; /* 讓卡片在同一行 */
+}
+
+/* 讓圖片區塊統一高度，確保圖片置中 */
+.image-container {
+    width: 100%;
+    height: 180px; /* 統一圖片區塊高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* 讓圖片不變形，填滿容器 */
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* 讓圖片完整顯示 */
+    border-radius: 8px;
+}
+
+/* 作品標題 */
+.photo-card h2 {
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    min-height: 65px;
+}
+
+/* 作品描述 */
+.photo-card p {
+    font-size: 0.9rem;
+    color: #3A3A3A;
+    margin-top: 10px;
+    min-height: 70px;
+    display: flex;
+    align-items: center;  /* 讓文字「垂直置中」 */
+    justify-content: center;
+}

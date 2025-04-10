@@ -1,0 +1,63 @@
+h1{
+    color: #FFFFFF;
+    background-color: #1F3B73;
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 15px;
+}
+h2{
+    color:#FFFFFF ;
+    background-color: #A3C1E2;
+    border: 2px solid pink;
+    padding: 30px;
+    border-radius: 20px;
+} 
+h3{
+    color:#2c3e50 ;
+    background-color:#EAEAEA;
+}
+strong{
+    color:palevioletred; font-size: 20px;
+}
+/*.blueblue{ 指定class的元件用. 
+    color:black; background-color: pink; 
+*/
+/*#callme{  指定id的元件的元件用#
+    background-color: yellow;color:red;
+}*/
+*{font-family: serif;} /* *是指整個網頁全部的樣式變成這樣 *//* font-family是字型 */
+a:hover{ /* 移到超連結上會變的樣式 */
+    text-decoration: underline; /* 有沒有劃底線 */
+    background-color:#eaeaea;
+}
+.redred{
+    color: red;
+    font-weight: 900; /* 這是字的粗細 */
+}
+header{
+    background-color: antiquewhite;
+    padding: 20px;
+    border: 2px solid black;
+}
+main{
+    background-color:#EAEAEA;
+}
+section{
+    background-color: #EAEAEA;
+    padding: 5px;
+}
+footer{
+    background-color: #F8F9FA;
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.menub{
+    background-color: paleturquoise;
+    border: 2px soild bisque;
+    padding: 10px 20px;
+    border-radius: 15px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>     <!--文件的型態宣告-->
+
+<html>      <!--代表你寫的東西是html-->
+    <head> <!--網頁的附加資訊-->
+         <meta charset="utf-8"/> <!--網頁編碼是utf-8-->
+         <title>My first Page</title> <!--網頁的標題-->
+    </HEAD>
+    <body>   <!--網頁主畫面顯示的東西都寫在body標籤中-->
+         Hello HTML    <!--正常文字-->
+         <h1>Hello HTML</h1> <!--1號標題-->
+         <h2>Hello HTML</h2> <!--2號標題-->
+         <h3> Hello HTML</h3> <!--3號標題-->
+         <h4>Hello HTML</h4> <!--4號標題-->
+         <h5>Hello HTML</h5> <!--5號標題-->
+         <a href="https://www.youtube.com/watch?v=bvFoPHLqFmo">玩很大</a> <!--插入超連結-->
+         <div id="title"class="head">Title</div>
+         <b>Hello HTML</b><br> <!--b為粗體 br為換行-->
+         <i>Hello HTML</i><br> <!--i為斜體-->
+         <!--插入圖片-->
+         <img src="https://img.shoplineapp.com/media/image_clips/645b545687a79200203dcda9/original.jpeg?1683706966"></img><br>
+         <!--插入圖片的縮寫-->
+         <img src="https://img.shoplineapp.com/media/image_clips/645b545687a79200203dcda9/original.jpeg?1683706966"/><br>
+         <!--讓圖片上擁有超連結-->
+         <a href="https://www.rocktailshop.com.tw/blog/posts/golden-retriever">
+         <img src="https://img.shoplineapp.com/media/image_clips/645b545687a79200203dcda9/original.jpeg?1683706966"></img></a>
+         <hr/> <!--水平線-->
+         <!--列表的練習-->
+         <ul>     <!--圓圈圈列表-->
+                <li>林姿羽</li> <!--第一列-->
+                <li>藺稹</li> <!--第二列-->
+         </ul>
+         <ol>     <!--有順序的列表-->
+                <li>林姿羽</li> <!--第一列-->
+                <li>藺稹</li> <!--第二列-->
+         </ol>
+         <!--表格的練習-->
+         <!--table為要做一個表格-->
+         <table border="1" width="350" cellpadding="10"> <!--border為格線的寬度、width為表格的寬度、cellpadding為設定表格格線跟文字的距離-->
+          <caption>家族列表名字</caption> <!--表格標題-->
+               <tr> <!--第一列，要幾列就有幾個tr-->
+                    <td>藺稹</td> <!--第一列的第一欄、藺稹為放在第一欄的內容-->
+                    <td>林姿羽</td>
+                    <td>林晏霆</td>
+               </tr>
+               <tr> <!--第二列-->
+                    <td>黃琨仁</td> <!--第二列的第一欄、黃琨仁為放在第一欄的內容-->
+                    <td>黃芷瑄</td>
+                    <td>黃進成</td>
+                    <th>林姿羽</th> <!--表格內的字體會加粗-->
+               </tr>
+         </table>
+          <!--問卷製作方式-->
+           <form action="/submit" method="post"> <!--form為建立表單、action為指定資料提交的目的地、method為指定傳輸方式分為get和post-->
+                <label for="username">使用者名稱：</label> <!--用來描述需要輸入什麼、點擊文字也會對應到輸入框-->
+                <input type="text" name="username" id="username"> 
+                <button type="submit">送出</button>
+          </form>
+          <hr/>
+          <p>妳好</p>  <!--這是一個段落-->
+          <div>這是一個分區</div>
+          <p>我很<span>漂亮</span></p>
+          <textarea rows="4" cols="50">輸入觀影心得</textarea><br>
+          <a href="https://tixcraft.com”> <button>購票請點我 </button> </a>   
+     </body>
+</html>
